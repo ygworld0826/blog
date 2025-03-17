@@ -1,125 +1,13 @@
-/* ✅ 글로벌 스타일 초기화 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
 body {
-  background-color: #0D0D0D;
-  color: #E4E4E7;
-  line-height: 1.6;
-  padding: 20px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* ✅ 헤더 스타일 */
-.App-header {
-  background-color: #161616;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  margin-bottom: 40px;
-  border: 1px solid #262626;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-/* ✅ 로고 컨테이너 */
-.logo-container {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* ✅ 로고 스타일 */
-.App-logo {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-bottom: 5px;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  animation: App-logo-spin infinite 10s linear; /* ✅ 회전 애니메이션 추가 */
-}
-
-/* ✅ 호버 효과 */
-.App-logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0, 216, 255, 0.7);
-}
-
-/* ✅ 로고 회전 애니메이션 */
-@keyframes App-logo-spin {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-/* ✅ 왼쪽 사이드바 너비 줄이기 */
-.Sidebar.left {
-  width: 110px; /* 기존 140px → 110px */
-  text-align: center;
-  flex-shrink: 0;
-  padding: 10px;
-}
-
-/* ✅ 왼쪽 사이드바 문구 크기 최적화 */
-.Sidebar.left ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  list-style: none;
-  gap: 8px; /* 기존보다 간격 축소 */
-}
-
-.Sidebar.left ul li a {
-  font-size: 0.8rem; /* 기존 0.85rem → 0.8rem */
-  display: block;
-  text-align: center;
-  word-break: keep-all;
-}
-
-/* ✅ "더보기" 버튼 스타일 업그레이드 */
-.more-button {
-  display: inline-block;
-  padding: 12px 18px;
-  margin-top: 20px;
-  background: linear-gradient(135deg, #00EFFF, #00D8FF);
-  color: #121212;
-  font-weight: bold;
-  font-size: 0.9rem;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: all 0.3s ease-in-out, background 0.5s ease-in-out;
-  width: 120px;
-  box-shadow: 0 0 10px rgba(0, 216, 255, 0.5);
-}
-
-/* ✅ "더보기" 버튼 호버 시 */
-.more-button:hover {
-  background: linear-gradient(135deg, #00D8FF, #00EFFF);
-  color: #FFFFFF;
-  border: 2px solid #00D8FF;
-  box-shadow: 0 0 15px rgba(0, 216, 255, 0.7);
-  transform: scale(1.1);
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
